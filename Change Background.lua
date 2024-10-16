@@ -145,8 +145,9 @@ DataMatch = MainImageURl:match("^.+(%..+)$")
 URLIMGFrame = "MainImageURl" ..DataMatch
 writefile("ECCS_Searcher_V2.7/MainFramePng/URLIMGFrame.png", response)
 else
-HeadFrame:TweenPosition(UDim2.new(0.5, 0, -1.2, 0),"InOut","Sine",0.3)
-print("URL ERROR")
+HintWait.Size = UDim2.new(0, 0, 0, 60)
+HintWait:TweenSize(UDim2.new(0, 250, 0, 60),"Out","Linear",3)
+Hint.Text = " Url Error!"
 end
 end)
 end) 
