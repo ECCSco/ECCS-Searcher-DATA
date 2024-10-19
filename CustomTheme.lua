@@ -3,11 +3,9 @@ CustomThemeImg = Instance.new("ImageLabel")
 CustomThemeUICorner = Instance.new("UICorner")
 CustomThemeUIStroke = Instance.new("UIStroke")
 
--- Предположим, что CustomThemeImg - это объект ImageLabel
-local CustomThemeImg = script.Parent:WaitForChild("CustomThemeImg")
-
--- Устанавливаем цвет
-
+local R = R.Value
+local G = G.Value
+local B = B.Value
 
 CustomTheme.Parent = ThemeBackground
 CustomTheme.BackgroundTransparency = 1
@@ -24,10 +22,10 @@ CustomThemeUICorner.Parent = CustomTheme
 
 CustomThemeUIStroke.Parent = CustomTheme
 CustomThemeUIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
---CustomThemeUIStroke.Color = Color3.fromRGB(love.draw)
+CustomThemeUIStroke.Color = Color3.fromRGB(R, G, B)
 CustomThemeUIStroke.Thickness = 1.5
 
---print(CustomThemeUIStroke.Color)
+print(CustomThemeUIStroke.Color)
 
 CustomThemeImg.Name = "CustomThemeImg"
 CustomThemeImg.Parent = CustomTheme
