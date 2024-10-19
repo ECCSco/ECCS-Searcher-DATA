@@ -30,7 +30,7 @@ CustomThemeImg.Size = UDim2.new(0, 50, 0, 50)
 CustomThemeImg.Image = "rbxassetid://87037152011988"
 CustomThemeImg.ImageColor3 = Color3.fromRGB(R, G, B)
 
-CustomThemeImg.MouseButton1Click:Connect(function()
+CustomTheme.MouseButton1Click:Connect(function()
 CloseUIButton.TextColor3 = Color3.fromRGB(R, G, B)
 MainFrameUIStroke.Color = Color3.fromRGB(R, G, B)
 ScriptImg.BackgroundColor3 = Color3.fromRGB(R, G, B)
