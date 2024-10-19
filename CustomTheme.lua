@@ -21,14 +21,14 @@ CustomThemeUIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 CustomThemeUIStroke.Color = Color3.fromRGB(R, G, B)
 CustomThemeUIStroke.Thickness = 1.5
 
---[[CustomThemeImg.Name = "CustomThemeImg"
+CustomThemeImg.Name = "CustomThemeImg"
 CustomThemeImg.Parent = CustomTheme
 CustomThemeImg.BackgroundTransparency = 1
 CustomThemeImg.AnchorPoint = Vector2.new(0.5, 0.5)
 CustomThemeImg.Position = UDim2.new(0.5, 0, 0.5, 0)
 CustomThemeImg.Size = UDim2.new(0, 50, 0, 50)
 CustomThemeImg.Image = "rbxassetid://87037152011988"
-CustomThemeImg.ImageColor3 = Color3.fromRGB(R, G, B)]]
+CustomThemeImg.ImageColor3 = Color3.fromRGB(R, G, B)
 
 CustomTheme.MouseButton1Click:Connect(function()
 CloseUIButton.TextColor3 = Color3.fromRGB(R, G, B)
