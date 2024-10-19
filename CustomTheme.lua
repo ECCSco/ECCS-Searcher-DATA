@@ -20,7 +20,7 @@ CustomThemeUICorner.Parent = CustomTheme
 
 CustomThemeUIStroke.Parent = CustomTheme
 CustomThemeUIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-CustomThemeUIStroke.Color = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
+CustomThemeUIStroke.Color = Color3.fromRGB(zigzag(R), 0, 0)
 CustomThemeUIStroke.Thickness = 1.5
 
 CustomThemeImg.Name = "CustomThemeImg"
@@ -30,7 +30,7 @@ CustomThemeImg.AnchorPoint = Vector2.new(0.5, 0.5)
 CustomThemeImg.Position = UDim2.new(0.5, 0, 0.5, 0)
 CustomThemeImg.Size = UDim2.new(0, 50, 0, 50)
 CustomThemeImg.Image = "rbxassetid://87037152011988"
-CustomThemeImg.ImageColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
+CustomThemeImg.ImageColor3 = Color3.fromRGB(zigzag(R), 0, 0)
 
 CustomTheme.MouseButton1Click:Connect(function()
 CloseUIButton.TextColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
