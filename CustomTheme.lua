@@ -3,6 +3,13 @@ CustomThemeImg = Instance.new("ImageLabel")
 CustomThemeUICorner = Instance.new("UICorner")
 CustomThemeUIStroke = Instance.new("UIStroke")
 
+function love.draw(R, G, B)
+    -- Устанавливаем цвет (R = 255, G = 0, B = 0)
+    love.graphics.setColor(255, 0, 0)
+    -- Рисуем кнопку (прямоугольник)
+    love.graphics.rectangle("fill", 100, 100, 200, 50)
+end
+
 CustomTheme.Parent = ThemeBackground
 CustomTheme.BackgroundTransparency = 1
 CustomTheme.AutoButtonColor = false
@@ -18,7 +25,7 @@ CustomThemeUICorner.Parent = CustomTheme
 
 CustomThemeUIStroke.Parent = CustomTheme
 CustomThemeUIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-CustomThemeUIStroke.Color = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
+CustomThemeUIStroke.Color = Color3.fromRGB(love.draw)
 CustomThemeUIStroke.Thickness = 1.5
 
 print(CustomThemeUIStroke.Color)
@@ -30,7 +37,7 @@ CustomThemeImg.AnchorPoint = Vector2.new(0.5, 0.5)
 CustomThemeImg.Position = UDim2.new(0.5, 0, 0.5, 0)
 CustomThemeImg.Size = UDim2.new(0, 50, 0, 50)
 CustomThemeImg.Image = "rbxassetid://87037152011988"
-CustomThemeImg.ImageColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
+CustomThemeImg.ImageColor3 = Color3.fromRGB(love.draw)
 
 CustomTheme.MouseButton1Click:Connect(function()
 CloseUIButton.TextColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
