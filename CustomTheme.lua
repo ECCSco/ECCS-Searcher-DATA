@@ -213,8 +213,6 @@ CustomThemeUIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 CustomThemeUIStroke.Color = Color3.fromRGB(0, 0, 0)
 CustomThemeUIStroke.Thickness = 1.5
 
-print(CustomThemeUIStroke.Color)
-
 CustomThemeImg.Name = "CustomThemeImg"
 CustomThemeImg.Parent = CustomTheme
 CustomThemeImg.BackgroundTransparency = 1
@@ -227,26 +225,25 @@ CustomThemeImg.ImageColor3 = Color3.fromRGB(0, 0, 0)
 SetCustomTheme.MouseButton1Click:Connect(function()
 if RTextBox.Text ~= "" and GTextBox.Text ~= "" and BTextBox.Text ~= "" then
 CustomThemeImg.ImageColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
-CustomThemeUIStroke.ImageColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text) 
-end
-end)
-
+CustomThemeUIStroke.Color = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text) 
 CustomTheme.MouseButton1Click:Connect(function()
-CloseUIButton.TextColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
-MainFrameUIStroke.Color = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
-ScriptImg.BackgroundColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
-InfoBoxDescription.BackgroundColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
-HintWait.BackgroundColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
-ECCSSearcherSettingsButton.ImageColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
-TabsLine.BackgroundColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
-HomeButton.ImageColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
-ExecutorMenuButton.ImageColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
-ScriptsLibraryButton.ImageColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
-SearcherMenuButton.ImageColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
-SImg.BackgroundColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
-SImg_2.BackgroundColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
-Comment.BackgroundColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
-ThemesHeadFrame.BackgroundColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
-PaidModeButtonPart1.BackgroundColor3 = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
-PaidModeUIStroke.Color = Color3.fromRGB(zigzag(R), zigzag(G), zigzag(B))
+CloseUIButton.TextColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
+MainFrameUIStroke.Color = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
+ScriptImg.BackgroundColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
+InfoBoxDescription.BackgroundColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
+HintWait.BackgroundColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
+ECCSSearcherSettingsButton.ImageColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
+TabsLine.BackgroundColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
+HomeButton.ImageColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
+ExecutorMenuButton.ImageColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
+ScriptsLibraryButton.ImageColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
+SearcherMenuButton.ImageColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
+SImg.BackgroundColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
+SImg_2.BackgroundColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
+Comment.BackgroundColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
+ThemesHeadFrame.BackgroundColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
+PaidModeButtonPart1.BackgroundColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
+PaidModeUIStroke.Color = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
+end)
+end
 end)
