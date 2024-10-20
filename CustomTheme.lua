@@ -71,4 +71,4 @@ PaidModeButtonPart1.BackgroundColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Te
 PaidModeUIStroke.Color = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
 end
 
-CustomTheme.MouseButton1Click:Connect(clickedButton()
+CustomTheme.MouseButton1Click:Connect(clickedButton)
