@@ -31,7 +31,7 @@ CustomThemeImg.Size = UDim2.new(0, 50, 0, 50)
 CustomThemeImg.Image = "rbxassetid://87037152011988"
 CustomThemeImg.ImageColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
 
-CustomTheme.Name.MouseButton1Click:Connect(function()
+CustomTheme.MouseButton1Click:Connect(function()
 writefile("ECCS_Searcher_V2.7/Themes/RedValue.ECCS", RTextBox.Text)
 writefile("ECCS_Searcher_V2.7/Themes/GreenValue.ECCS", GTextBox.Text)
 writefile("ECCS_Searcher_V2.7/Themes/BlueValue.ECCS", BTextBox.Text)
