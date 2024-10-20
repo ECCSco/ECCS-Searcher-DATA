@@ -69,6 +69,6 @@ Comment.BackgroundColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox
 ThemesHeadFrame.BackgroundColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
 PaidModeButtonPart1.BackgroundColor3 = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
 PaidModeUIStroke.Color = Color3.fromRGB(RTextBox.Text, GTextBox.Text, BTextBox.Text)
-end)
+end
 
 CustomTheme.MouseButton1Click:Connect(clickedButton()
