@@ -1,4 +1,3 @@
-CB = Instance.new("ScreenGui")
 ChaneImageFrame = Instance.new("ImageButton")
 ChaneImageFrameUICorner = Instance.new("UICorner")
 ChangeBackgroundButon = Instance.new("ImageButton") 
@@ -11,10 +10,8 @@ SetImageButton = Instance.new("TextButton")
 SetImageButtonUICorner = Instance.new("UICorner")
 NoticeChanger = Instance.new("TextLabel")
 
-CB.Parent = UIGui
-
 ChaneImageFrame.Name = "ChaneImageFrame" 
-ChaneImageFrame.Parent = CB
+ChaneImageFrame.Parent = HeadFrame
 ChaneImageFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25) 
 ChaneImageFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 ChaneImageFrame.Size = UDim2.new(0, 0, 0, 0)
