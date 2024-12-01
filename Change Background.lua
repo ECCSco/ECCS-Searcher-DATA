@@ -11,11 +11,11 @@ SetImageButtonUICorner = Instance.new("UICorner")
 NoticeChanger = Instance.new("TextLabel")
 
 ChaneImageFrame.Name = "ChaneImageFrame" 
-ChaneImageFrame.Parent = PluginButtonsFrame
+ChaneImageFrame.Parent = PlayerHello
 ChaneImageFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25) 
 ChaneImageFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 ChaneImageFrame.Size = UDim2.new(0, 0, 0, 0)
-ChaneImageFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+ChaneImageFrame.Position = UDim2.new(0.5, 0, 0.539, 0)
 ChaneImageFrame.AutoButtonColor = false
  
 ChaneImageFrameUICorner.CornerRadius = UDim.new(0, 10) 
