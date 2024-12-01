@@ -11,11 +11,11 @@ SetImageButtonUICorner = Instance.new("UICorner")
 NoticeChanger = Instance.new("TextLabel")
 
 ChaneImageFrame.Name = "ChaneImageFrame" 
-ChaneImageFrame.Parent = HeadFrame
+ChaneImageFrame.Parent = PluginButtonsFrameBackground
 ChaneImageFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25) 
 ChaneImageFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 ChaneImageFrame.Size = UDim2.new(0, 0, 0, 0)
-ChaneImageFrame.Position = UDim2.new(0.5, 0, 0.0425, 0)
+ChaneImageFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 ChaneImageFrame.AutoButtonColor = false
  
 ChaneImageFrameUICorner.CornerRadius = UDim.new(0, 10) 
@@ -115,7 +115,7 @@ URLTextBox.Visible = false
 SetImageButton.Visible = false
 end
  
-if ChaneImageFrame.Size == UDim2.new(0, 400, 0, 222) then
+if ChaneImageFrame.Size == UDim2.new(0, 242, 0, 145) then
 CloseButtonImageFrame.Visible = true
 URLTextBox.Visible = true
 SetImageButton.Visible = true
@@ -129,7 +129,7 @@ end
 end)
  
 ChangeBackgroundButon.MouseButton1Click:Connect(function() 
-ChaneImageFrame:TweenSize(UDim2.new(0, 400, 0, 222),"InOut","Sine",0.4)
+ChaneImageFrame:TweenSize(UDim2.new(0, 242, 0, 145),"InOut","Sine",0.4)
 end) 
  
 SetImageButton.MouseButton1Click:Connect(function() 
